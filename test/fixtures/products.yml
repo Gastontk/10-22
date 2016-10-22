@@ -2,12 +2,12 @@
 
 one:
   name: MyString
-  amount: 1
+  amount: 9.99
   poster_id: MyString
   owner_id: MyString
 
 two:
   name: MyString
-  amount: 1
+  amount: 9.99
   poster_id: MyString
   owner_id: MyString
