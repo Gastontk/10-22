@@ -69,7 +69,7 @@
 		<% @purchases.each do  |t| %>
 			<tr>
 				<td><%= t.name %></td>
-				<td><%= t.updated_at %></td>
+				<td><%= t.updated_at.strftime("%b. %d  %Y") %></td>
 				<td><%= User.find_by_id(t.poster_id).first_name %> <%= User.find_by_id(t.poster_id).last_name %></td>				<td><%= number_to_currency(t.amount)%></td>
 			</tr>
 		<% end %>
