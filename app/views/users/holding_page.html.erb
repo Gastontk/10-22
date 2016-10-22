@@ -1,0 +1,8 @@
+<h1>holding page</h1>
+ <% if flash[:message] %>
+	<h1 class = "btn-danger"><%= flash[:message] %></h1>
+<% end %>
+
+
+
+<%= link_to 'New User/Login', '/signup' %>

@@ -1,0 +1,37 @@
+
+<div class = 'row'>
+
+	<div class = 'form col-md-5'>
+			<h1>Signup!</h1>
+
+		<%= bootstrap_form_for(@user, url: '/users') do |f| %>
+
+		  <%= f.text_field :first_name %>
+		  <%= f.text_field :last_name %>
+		  <%= f.text_field :email %>
+		  <%= f.password_field :password %>
+		  <%= f.password_field :password_confirmation , label:'Retype Password'%>
+		  <%= f.submit "Submit", class: 'btn btn-primary pull-right' %>
+
+		<% end %>
+
+	</div>
+
+	<div class ='col-md-5'>
+		<h1>Login</h1>
+		<% if flash[:alert] %>
+			<div style='color:red;'>
+				<%= flash[:alert] %>
+			</div>
+
+		<% end %>
+		<%= bootstrap_form_tag url: '/login' do |t|%>
+
+		  <%= t.text_field :email %>
+		  <%= t.password_field :password %>
+		  <%= t.submit "Submit", class: 'btn btn-primary pull-right' %>
+
+		<% end %>
+	</div>
+</div>
+
