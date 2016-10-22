@@ -26,6 +26,7 @@ class UsersController < ApplicationController
   end
   # for all unfoundpages that require 404
   def not_found
+    
   end
   private
   	def user_params

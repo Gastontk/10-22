@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   # get "*any", via: :all, to: "users/not_found"
 
 
-  # match "*path", to: "users#not_found", via: :all
+  match "*path", to: "users#not_found", via: :all
 
 
 

@@ -70,7 +70,7 @@
 			<tr>
 				<td><%= t.name %></td>
 				<td><%= t.updated_at %></td>
-				<td><%= User.find_by_id(t.owner_id).first_name %> <%= User.find_by_id(t.owner_id).last_name %></td>				<td><%= number_to_currency(t.amount)%></td>
+				<td><%= User.find_by_id(t.poster_id).first_name %> <%= User.find_by_id(t.poster_id).last_name %></td>				<td><%= number_to_currency(t.amount)%></td>
 			</tr>
 		<% end %>
 	</table>
